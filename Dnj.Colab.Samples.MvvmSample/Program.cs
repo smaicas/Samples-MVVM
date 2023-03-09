@@ -6,7 +6,7 @@ Dnj.Colab content is distributed in the hope that it will be useful, but WITHOUT
 
 You should have received a copy of the General Public License version 3 along with this repository. If not, see <https://github.com/smaicas-org/Dnj.Colab/blob/dev/LICENSE>. */
 
-using Dnj.Colab.Samples.MvvmSample.RCL.ViewModels;
+using Dnj.Colab.Samples.MvvmSample.Abstractions;
 using Dnj.Colab.Samples.MvvmSample.ViewModels;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
