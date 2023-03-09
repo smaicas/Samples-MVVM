@@ -8,10 +8,8 @@ You should have received a copy of the General Public License version 3 along wi
 
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using Dnj.Colab.Samples.MvvmSample.RCL.Model;
-using Dnj.Colab.Samples.MvvmSample.RCL.ViewModels;
 
-namespace Dnj.Colab.Samples.MvvmSample.ViewModels.Abstractions;
+namespace Dnj.Colab.Samples.MvvmSample.Abstractions;
 
 public abstract class DnjTodoViewModel : IDnjTodoViewModel
 {
@@ -67,10 +65,7 @@ public abstract class DnjTodoViewModel : IDnjTodoViewModel
         IsBusy = false;
     }
 
-    protected virtual void OnPropertyChanged([CallerMemberName] string? propertyName = null)
-    {
-        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-    }
+    protected virtual void OnPropertyChanged([CallerMemberName] string? propertyName = null) => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 
     protected bool SetField<T>(ref T field, T value, [CallerMemberName] string? propertyName = null)
     {

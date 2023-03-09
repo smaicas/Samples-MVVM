@@ -19,4 +19,8 @@
 		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="7.0.1" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\Dnj.Colab.Samples.MvvmSample.Abstractions\Dnj.Colab.Samples.MvvmSample.Abstractions.csproj" />
+	</ItemGroup>
+
 </Project>

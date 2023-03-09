@@ -11,8 +11,4 @@
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
 	</PropertyGroup>
 
-	<ItemGroup>
-		<ProjectReference Include="..\Dnj.Colab.Samples.MvvmSample.RCL\Dnj.Colab.Samples.MvvmSample.RCL.csproj" />
-	</ItemGroup>
-
 </Project>

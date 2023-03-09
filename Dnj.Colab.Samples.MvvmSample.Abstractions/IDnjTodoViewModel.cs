@@ -6,19 +6,16 @@ Dnj.Colab content is distributed in the hope that it will be useful, but WITHOUT
 
 You should have received a copy of the General Public License version 3 along with this repository. If not, see <https://github.com/smaicas-org/Dnj.Colab/blob/dev/LICENSE>. */
 
-namespace Dnj.Colab.Samples.MvvmSample.RCL.Model;
+using System.ComponentModel;
 
-public class TodoItem
+namespace Dnj.Colab.Samples.MvvmSample.Abstractions;
+
+public interface IDnjTodoViewModel : INotifyPropertyChanged
 {
-    public TodoItem()
-    {
-        Id = new Guid();
-        Done = false;
-    }
+    bool IsBusy { get; set; }
+    int TodoItems { get; }
+    TodoItem TodoItem { get; set; }
+    List<TodoItem> TodoItemList { get; }
 
-    public Guid Id { get; set; }
-    public string Title { get; set; }
-    public string Notes { get; set; }
-    public DateTime? Date { get; set; }
-    public bool Done { get; set; }
+    Task SaveTodoItem(TodoItem todoitem);
 }
