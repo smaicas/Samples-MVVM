@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Dnj.Colab\Dnj.Colab.Samples.MvvmWebSocketServer.Identity.RCL\Dnj.Colab.Samples.MvvmWebSocketServer.Identity.RCL.csproj" />
     <ProjectReference Include="..\Dnj.Colab.Samples.MvvmWebsocketServer.RCL\Dnj.Colab.Samples.MvvmWebsocketServer.RCL.csproj" />
   </ItemGroup>
 

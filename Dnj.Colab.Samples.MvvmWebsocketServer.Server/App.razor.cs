@@ -14,6 +14,7 @@ public partial class App : ComponentBase
             _lazyLoadedAssemblies.Clear();
             //_lazyLoadedAssemblies.Add(Assembly.Load("Dnj.Colab.Samples.MvvmWebsocketServer.Wasm"));
             _lazyLoadedAssemblies.Add(Assembly.Load("Dnj.Colab.Samples.MvvmWebsocketServer.RCL"));
+            _lazyLoadedAssemblies.Add(Assembly.Load("Dnj.Colab.Samples.MvvmWebSocketServer.Identity.RCL"));
         }
         catch (Exception ex)
         {

@@ -12,6 +12,7 @@ public partial class WasmApp : ComponentBase
         try
         {
             _lazyLoadedAssemblies.Clear();
+            _lazyLoadedAssemblies.Add(Assembly.Load("Dnj.Colab.Samples.MvvmWebSocketServer.Identity.RCL"));
             _lazyLoadedAssemblies.Add(Assembly.Load("Dnj.Colab.Samples.MvvmWebsocketServer.RCL"));
         }
         catch (Exception ex)
